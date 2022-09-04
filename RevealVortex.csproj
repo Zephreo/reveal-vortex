@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="RevealVortex.cs"/>
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="BepInEx.Harmony" CopyToPublishDirectory="Never">
       <HintPath>.\externals\BepInEx.Harmony.dll</HintPath>
     </Reference>
