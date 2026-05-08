@@ -18,12 +18,10 @@ namespace RevealVortex
         }
 
 
-        // Grinding status can be set to the end, which will then update the map
         [HarmonyPatch(typeof(PotionCraft.ObjectBased.RecipeMap.RecipeMapItem.VortexMapItem.VortexMapItem))]
-        [HarmonyPatch("SetLockedState")]
+        [HarmonyPatch("SetLocked")]
         class ForceLockedState
         {
-            // Skip the grinding status update if fully ground, to prevent it from going backward
             static void Prefix(ref bool locked)
             {
                 locked = false;
