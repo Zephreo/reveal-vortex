@@ -7,4 +7,4 @@ Requires BepInEx to patch into the game. Get BepInEx 5 at https://github.com/Bep
 
 Install by extracting the folder with the DLL into `BepInEx/plugins`.
 
-If you want to build this from source, you can find the required libraries in the `BepInEx/core` and `Potion Craft_Data/Managed` folders.
+If you want to build this from source, you can find the required libraries in the `BepInEx/core` and `Potion Craft_Data/Managed` folders, copy the libraries there into an `externals/` folder of the repo.
